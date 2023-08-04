@@ -59,7 +59,7 @@ Open an account on [Tip4serv.com](https://tip4serv.com/?ads=github) and add an A
 
 ## Commands example
 
-Here are some commands example you can use in the products configuration: MY PRODUCTS.
+Here are some commands example you can use in the products configuration: [MY PRODUCTS](https://tip4serv.com/dashboard/my-products).
 But you can use all oxide commands and all commands of the plugins that you have installed on your server.
 
 ***Give 50 EXP to a player:***
