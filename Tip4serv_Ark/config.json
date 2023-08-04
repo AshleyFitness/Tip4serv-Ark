@@ -1,0 +1,5 @@
+{
+"key": "YOUR_SECRETKEY_HERE",
+"request_interval_in_minutes" : 2,
+"order_received_text" : "Thank you for your purchase :)"
+}
