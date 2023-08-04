@@ -62,14 +62,6 @@ Open an account on [Tip4serv.com](https://tip4serv.com/?ads=github) and add an A
 Here are some commands example you can use in the products configuration: [MY PRODUCTS](https://tip4serv.com/dashboard/my-products).
 But you can use all commands of the plugins that you have installed on your server.
 
-***Give 50 EXP to a player:***
-
-`GiveExpToPlayer {ue4_id} 50 false false`
-
-***Give Tek Sword to a player:***
-
-`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponTekSword.PrimalItem_WeaponTekSword'" 1 1 false`
-
 ***Add permission to a player:***
 
 Required: ARK Permission plugin
@@ -82,11 +74,19 @@ Required: ARK Shop plugin
 
 `AddPoints {steam_id} 51`
 
+***Give 50 EXP to a player:***
+
+`GiveExpToPlayer {ue4_id} 50 false false`
+
+***Give Tek Sword to a player:***
+
+`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponTekSword.PrimalItem_WeaponTekSword'" 1 1 false`
+
 ***Send message to all players:***
 
 `Broadcast Thank you {arkse_username} for your {total_paid} {currency} donation`
 
-[Check all commands here](https://arkids.net/commands)
+[Check all ARK admin commands here](https://arkids.net/commands)
 
 ## Quantity multiplier
 
