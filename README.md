@@ -14,20 +14,35 @@ We take a 5% commission and that’s it ! You have access to all features with n
 ## Features
 
 Unlimited game servers & commands
+
 Create subscriptions plan
+
 Commands status tracking
+
 Stock management
+
 Deliver roles & messages on Discord
+
 Easily offer a product to a friend
+
 Create coupon code
+
 Create discount
+
 Add managers for your store
+
 Purchase email and invoice
+
 Sales statistics
+
 Private flow for subscribers
+
 Custom sub-domain
+
 Resend commands
+
 Customize store colors
+
 No ads
 
 ## Store available in 15 languages
