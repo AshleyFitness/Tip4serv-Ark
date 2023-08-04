@@ -72,9 +72,13 @@ But you can use all commands of the plugins that you have installed on your serv
 
 ***Add permission to a player:***
 
+Required: ARK Permission plugin
+
 `Permissions.Add {steam_id} vip`
 
 ***Add points to a player:***
+
+Required: ARK Shop plugin
 
 `AddPoints {steam_id} 51`
 
