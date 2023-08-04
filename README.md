@@ -92,7 +92,7 @@ Required: ARK Shop plugin
 
 You can also multiply the quantity choosen by the customer like this: {quantity*50}
 
-Note: You must first activate the Allow quantity choice option in your product.
+Note: You must first activate the **Allow quantity choice** option in your product.
 
 Use this command on Tip4serv if you want to sell bundles of 200 points:
 
