@@ -104,7 +104,7 @@ This will run in your server console after a purchase if the player buys product
 
 ## Using the Plugin with Multiple Maps
 
-We recommend installing the plugin on all your maps and connecting all your servers in MY SERVERS. However, product configuration depends on what you are selling.
+We recommend installing the plugin on all your maps and connecting all your servers in [MY SERVERS](https://tip4serv.com/dashboard/my-servers). However, product configuration depends on what you are selling.
 
 ***Item Sales***
 
@@ -123,6 +123,8 @@ Functionality: Commands will be executed even if the player is not connected to 
 The plugin requires at least one player to be connected for a command to be executed on a server.
 
 ***Using RCON Connection***
+
+Configuration: Simply delete the plugins from your servers and connect them via RCON in [MY SERVERS](https://tip4serv.com/dashboard/my-servers)
 
 Advantage: The delivery system via RCON works similarly to the plugin but can execute commands even if no players are connected to the server.
 
