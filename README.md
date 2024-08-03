@@ -107,18 +107,22 @@ This will run in your server console after a purchase if the player buys product
 We recommend installing the plugin on all your maps and connecting all your servers in MY SERVERS. However, product configuration depends on what you are selling.
 
 ***Item Sales***
-**Configuration:** Add all your servers in the product editor (your different maps) and check the "Allow server choice" box.
-**Functionality:** The player can choose the map where they want to receive their items. Commands will be executed only if the player is connected to the chosen map.
+
+Configuration: Add all your servers in the product editor (your different maps) and check the "Allow server choice" box.
+Functionality: The player can choose the map where they want to receive their items. Commands will be executed only if the player is connected to the chosen map.
 
 ***Rank and Point Sales***
-**Configuration:** If you are selling only ranks and points and your maps are connected to the same database, add only your most popular server in your product.
-**Functionality:** Commands will be executed even if the player is not connected to the same map.
+
+Configuration: If you are selling only ranks and points and your maps are connected to the same database, add only your most popular server in your product.
+Functionality: Commands will be executed even if the player is not connected to the same map.
 
 ***Plugin Limitation***
+
 The plugin requires at least one player to be connected for a command to be executed on a server.
 
 ***Using RCON Connection***
-**Advantage:** The delivery system via RCON works similarly to the plugin but can execute commands even if no players are connected to the server.
+
+Advantage: The delivery system via RCON works similarly to the plugin but can execute commands even if no players are connected to the server.
 
 ## Need help?
 
