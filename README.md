@@ -78,9 +78,11 @@ Required: ARK Shop plugin
 
 `GiveExpToPlayer {ue4_id} 50 false false`
 
-***Give Tek Sword to a player:***
+***Give Item to a player:***
 
-`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponTekSword.PrimalItem_WeaponTekSword'" 1 1 false`
+`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
+
+Command generator: [ARK COMMANDS](https://arkids.net/command/giveitemtoplayer)
 
 ***Send message to all players:***
 
