@@ -70,7 +70,7 @@ Required: ARK Permission plugin
 
 ***Add points to a player:***
 
-Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/)
+Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/) or [WShop](https://www.curseforge.com/ark-survival-ascended/mods/wshop-ui)
 
 `AddPoints {steam_id} 51`
 
