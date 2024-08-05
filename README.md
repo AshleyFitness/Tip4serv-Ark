@@ -70,13 +70,19 @@ Required: ARK Permission plugin
 
 ***Add points to a player:***
 
-Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-ascended-arkshop-crossplay-supported.714/)
+Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/)
 
 `AddPoints {steam_id} 51`
 
 ***Give 50 EXP to a player:***
 
 `GiveExpToPlayer {ue4_id} 50 false false`
+
+***Give Item to a player:***
+
+`GiveItemToPlayer {ue5id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
+
+Command generator: [ARK COMMANDS](https://arkids.net/command/giveitemtoplayer)
 
 ***Send message to all players:***
 
