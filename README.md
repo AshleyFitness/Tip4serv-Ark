@@ -80,7 +80,7 @@ Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-surv
 
 ***Give Item to a player:***
 
-`GiveItemToPlayer {ue5id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
+`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
 
 Command generator: [ARK COMMANDS](https://arkids.net/command/giveitemtoplayer)
 
