@@ -78,12 +78,6 @@ Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-surv
 
 `GiveExpToPlayer {ue4_id} 50 false false`
 
-***Give Item to a player:***
-
-`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
-
-Command generator: [ARK COMMANDS](https://arkids.net/command/giveitemtoplayer)
-
 ***Send message to all players:***
 
 `Broadcast Thank you {arkse_username} for your {total_paid} {currency} donation`
