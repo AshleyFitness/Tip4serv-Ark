@@ -70,7 +70,7 @@ Required: ARK Permission plugin
 
 ***Add points to a player:***
 
-Required: ARK Shop plugin
+Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-ascended-arkshop-crossplay-supported.714/)
 
 `AddPoints {steam_id} 51`
 
