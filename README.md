@@ -16,8 +16,7 @@ Create your ARK Survival Evolved shop with [Tip4serv.com](https://tip4serv.com/?
     - [Sell Subscriptions](#sell-permissions-for-subscriptions)
     - [Multiply Quantity](#multiply-quantity)
 5. [Comparison: Plugin vs RCON](#comparison-plugin-vs-rcon)
-6. [Use the Plugin and RCON Together](#use-the-plugin-and-rcon-together)
-7. [Support](#support)
+6. [Support](#support)
 
 ## Introduction
 
