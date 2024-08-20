@@ -57,7 +57,7 @@ Provide players with items or experience.
 - Check the **"Allow server choice"** option and select **"Run only if player is online"** in the product editor.
 - Using this plugin you can also use self commands like **GiveItem** (impossible with RCON)
   
-![Options](https://tip4serv.com/img/tuto/arksteamid.png)
+![Options](https://tip4serv.com/img/tuto/arksteamid2.png)
 
 **Examples:**  
 - `GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
