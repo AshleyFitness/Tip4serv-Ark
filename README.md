@@ -1,137 +1,125 @@
-## Donation plugin for ARK (Tip4Serv)
+# Tip4Serv Donation plugin for ARK SE
 
-Create your ARK store with [Tip4serv.com](https://tip4serv.com/?ads=github) and monetize your community.
-This addon connects your ARK Survival Evolved server to your online store and delivers orders (group, money, items...) after each donation by typing commands in the server console.
+Create your ARK Survival Evolved shop with [Tip4serv.com](https://tip4serv.com/?ads=github) and monetize your community effectively. This addon connects your ARK Survival Evolved server to your online store, executing commands (group, money, items, etc.) in the server console following each donation.
 
-## HMAC authentication
+![Tip4Serv](https://tip4serv.com/img/logo.png)
 
-Tip4serv adds a layer of security using HMAC authentication to communicate. It is a strong authentication method that is used by banks [HMAC WIKI](https://en.wikipedia.org/wiki/HMAC)
+## Table of Contents
 
-## Price
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Commands](#commands-example)
+    - [Broadcast](#broadcast)
+    - [Sell Items and Experience](#sell-items-and-experience)
+    - [Sell Points](#sell-points)
+    - [Sell Subscriptions](#sell-permissions-for-subscriptions)
+    - [Multiply Quantity](#multiply-quantity)
+5. [Comparison: Plugin vs RCON](#comparison-plugin-vs-rcon)
+6. [Use the Plugin and RCON Together](#use-the-plugin-and-rcon-together)
+7. [Support](#support)
 
-We take a 5% commission and that’s it ! You have access to all features with no subscription required.
+## Introduction
 
-## Features
+This README provides detailed instructions on how to configure and utilize various commands and plugins for managing donations, item sales, experience points, and subscriptions on your ARK Survival Evolved server.
 
-Unlimited game servers & commands
+### HMAC Authentication
 
-Create subscriptions plan
+Tip4serv ensures secure communication by employing HMAC authentication, a robust method used by financial institutions. For more information, refer to the [HMAC Wikipedia page](https://en.wikipedia.org/wiki/HMAC).
 
-Commands status tracking
+## Prerequisites
 
-Stock management
-
-Deliver roles & messages on Discord
-
-Easily offer a product to a friend
-
-Create coupon code
-
-Create discount
-
-Add managers for your store
-
-Purchase email and invoice
-
-Sales statistics
-
-Private flow for subscribers
-
-Custom sub-domain
-
-Resend commands
-
-Customize store colors
-
-No ads
-
-## Store available in 15 languages
-
-English, Danish, Dutch, French, German, Hungarian, Italian, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish and Turkish.
-
-## Several payment methods
-
-Here are the payment methods you can offer your players: Card, Paypal, Google Pay, Ideal, Giropay, Bancontact, Sofort, Sepa, EPS, BACS, Multibanco, BECS, Przelexy24, BOLETO, OXXO, Afterpay.
+- An ARK Survival Evolved server with [ARK Server API](https://gameservershub.com/forums/resources/ark-server-api.12/) installed if using this Tip4Serv plugin.
+- RCON access to the server if using the RCON Tip4Serv connection.
+- Installation of [ArkShop](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/) and [Permissions](https://gameservershub.com/forums/resources/ark-permissions.20/) plugins if needed.
 
 ## Installation
 
-Open an account on [Tip4serv.com](https://tip4serv.com/?ads=github) and add an ARK server in [MY SERVERS](https://tip4serv.com/dashboard/my-servers)
+1. **Create an Account:** Sign up at [Tip4serv.com](https://tip4serv.com/?ads=github).
+2. **Add Your Server:** Navigate to [MY SERVERS](https://tip4serv.com/dashboard/my-servers) and add an ARK server.
+3. **Choose Connection Method:** Select either the plugin or RCON.
+4. **Configure Plugins:** Follow the provided instructions to set up the plugins.
 
-## Commands example
+## Commands Example
 
-Here are some commands example you can use in the products configuration: [MY PRODUCTS](https://tip4serv.com/dashboard/my-products).
-But you can use all commands of the plugins that you have installed on your server.
+### Broadcast
 
-***Add permission to a player:***
+Send a public thank you message in the server.
 
-Required: ARK Permission plugin
+**Example:**  
+- `Broadcast Thank you {arkse_username} for your {total_paid} {currency} donation`
 
-`Permissions.Add {steam_id} vip`
+### Sell Items and Experience
 
-***Add points to a player:***
+Provide players with items or experience.
 
-Required: [ARK Shop plugin](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/)
+**Prerequisites:**  
+- Ensure the plugin is installed on the server where the player will receive their items.
+- Check the **"Allow server choice"** option and select **"Run only if player is online"** in the product editor.
+  
+![Options](https://tip4serv.com/img/tuto/runonlyifplayerisonline2.png)
 
-`AddPoints {steam_id} 51`
+**Examples:**  
+- `GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
+- `GiveExpToPlayer {ue4_id} 50 false false`
 
-***Give 50 EXP to a player:***
+Command generator: [ARK COMMANDS](https://arkids.net/commands)
 
-`GiveExpToPlayer {ue4_id} 50 false false`
+### Sell Points
 
-***Give Item to a player:***
+Add points to a player's account, allowing them to purchase in-game items.
 
-`GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
+**Prerequisites:**  
+- [ArkShop plugin](https://gameservershub.com/forums/resources/ark-survival-evolved-arkshop.22/) is required.
 
-Command generator: [ARK COMMANDS](https://arkids.net/command/giveitemtoplayer)
+**Example:**  
+- `AddPoints {steam_id} 51`
 
-***Send message to all players:***
+### Sell Permissions for Subscriptions
 
-`Broadcast Thank you {arkse_username} for your {total_paid} {currency} donation`
+Add or remove permissions for a player.
 
-[Check all ARK admin commands here](https://arkids.net/commands)
+**Prerequisites:**  
+- [Permissions plugin](https://gameservershub.com/forums/resources/ark-permissions.20/) is necessary.
+- For multiple maps, add only one server in your product if all servers connect to the same database.
 
-## Quantity multiplier
+**Examples:**  
+- `Permissions.Add {steam_id} VIP`
+- `Permissions.Remove {steam_id} VIP`
 
-You can also multiply the quantity choosen by the customer like this: {quantity*50}
+**Procedure:**
 
-Note: You must first activate the **Allow quantity choice** option in your product.
+1. Go to the [product editor](https://docs.tip4serv.com/store-setup/server-commands).
+2. Enable subscriptions.
+3. Configure the command to execute after payment.
+4. Set up the command to execute when the subscription ends.
 
-Use this command on Tip4serv if you want to sell bundles of 200 points:
+![Sub](https://tip4serv.com/img/tuto/tutosubark.png)
 
-`AddPoints {steam_id} {quantity*200}`
+### Multiply Quantity
 
-This will run in your server console after a purchase if the player buys product 4 times:
+Multiply the quantity chosen by the customer using the following syntax: `{quantity*50}`
 
-`AddPoints 76561198030572988 800`
+**Prerequisites:**  
+- You must first enable the **"Allow quantity choice"** option in your product settings. 
 
-## Using the Plugin with Multiple Maps
+**Use this command on Tip4serv if you wish to sell bundles of 200 points:**
+- `AddPoints {steam_id} {quantity*200}`
 
-We recommend installing the plugin on all your maps and connecting all your servers in [MY SERVERS](https://tip4serv.com/dashboard/my-servers). However, product configuration depends on what you are selling.
+**This command will execute in your server console after a purchase if a player buys the product four times:**
+- `AddPoints 76561198030572988 800`
 
-***Item Sales***
+## Comparison: Plugin vs RCON
 
-Configuration: Add all your servers in the [product editor](https://docs.tip4serv.com/store-setup/server-commands#id-2.-product-editor) (your different maps) and check the "Allow server choice" box.
+- **Plugin:**
+  - Requires at least one player to be online for command execution.
+  - Commands are executed by the buyer when you select the **"Run only if player is online"** option.
 
-Functionality: The player can choose the map where they want to receive their items. Commands will be executed only if the player is connected to the chosen map.
+- **RCON:**
+  - Ideal for adding points or managing subscriptions.
+  - Commands are executed directly by the server and can run even if the server is empty.
+  - Only commands compatible with `{steam_id}` or `{ue4_id}` can be used.
 
-***Permissions and Points Sales***
+## Support
 
-Configuration: If you are selling only ranks and points and your maps are connected to the same database, add only your most popular server in your [product editor](https://docs.tip4serv.com/store-setup/server-commands#id-2.-product-editor).
-
-Functionality: Commands will be executed even if the player is not connected to the same map.
-
-***Plugin Limitation***
-
-The plugin requires at least one player to be connected for a command to be executed on a server.
-
-***Using RCON Connection***
-
-Configuration: Simply delete the plugins from your servers and connect them via RCON in [MY SERVERS](https://tip4serv.com/dashboard/my-servers)
-
-Advantage: The delivery system via RCON works similarly to the plugin but can execute commands even if no players are connected to the server.
-
-## Need help?
-
-[Documentation](https://docs.tip4serv.com)
-
-[Contact us](https://tip4serv.com/contact)
+For any questions or assistance, please refer to the [Documentation](https://docs.tip4serv.com) or [Contact Us](https://tip4serv.com/contact).
