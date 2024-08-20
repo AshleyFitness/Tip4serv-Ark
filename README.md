@@ -57,7 +57,7 @@ Provide players with items or experience.
 - Check the **"Allow server choice"** option and select **"Run only if player is online"** in the product editor.
 - Using this plugin you can also use self commands like **GiveItem** (impossible with RCON)
   
-![Options](https://tip4serv.com/img/tuto/runonlyifplayerisonline2.png)
+![Options](https://tip4serv.com/img/tuto/arksteamid.png)
 
 **Examples:**  
 - `GiveItemToPlayer {ue4_id} "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ElementShard.PrimalItemResource_ElementShard'" 2 65 0`
@@ -94,7 +94,7 @@ Add or remove permissions for a player.
 3. Configure the command to execute after payment.
 4. Set up the command to execute when the subscription ends.
 
-![Sub](https://tip4serv.com/img/tuto/tutosubark.png)
+![Sub](https://tip4serv.com/img/tuto/arksubscription.png)
 
 ### Multiply Quantity
 
