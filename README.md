@@ -114,7 +114,7 @@ Multiply the quantity chosen by the customer using the following syntax: `{quant
 - **Plugin:**
   - Requires at least one player to be online for command execution.
   - Commands are executed by the buyer when you select the **"Run only if player is online"** option.
-  - If the commands are identical across all your servers, you can use the same API key for each server and only add one server in the "MY SERVERS" section.
+  - If you are using identical commands across all your servers, you can use the same API key for each server and only add one server in the "MY SERVERS" section.
 
 - **RCON:**
   - Ideal for adding points or managing subscriptions.
